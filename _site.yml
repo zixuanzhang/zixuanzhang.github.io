@@ -14,12 +14,9 @@ navbar:
       - href: gapmodel.html
       - text: Genetics 
       - href: hunterlab.html
-    - text: Project
-      menu:
-      - text: instracart dashboard
-        href: dashboard.html
-      - text: instracart code
-        href: dashboard.Rmd
+    - text: Data camper
+      href: datacamp_about.html
+
   right:
     - text: "About"
       href: about.html

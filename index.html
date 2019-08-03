@@ -11,7 +11,7 @@
 
 
 
-<title>Curriculum vitae</title>
+<title>Eleanor Zhang</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -265,92 +262,6 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -358,16 +269,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -443,111 +344,26 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Curriculum vitae</h1>
+<h1 class="title toc-ignore">Eleanor Zhang</h1>
 
 </div>
 
 
-<div id="eleanor-zhang" class="section level2">
-<h2>Eleanor Zhang</h2>
-<p>Email: <a href="mailto:zz2602@columbia.edu" class="email">zz2602@columbia.edu</a></p>
-<p>Adress: 100 Haven Avenue, New York, 10032</p>
-<p>Tel: (530) 979-4001</p>
-<div id="education" class="section level3">
-<h3>EDUCATION</h3>
-<p><strong>Master of Science, Biostatistics</strong>, Mailman School of Public Health, Columbia University, expected May 2020</p>
-<p>Advisor: Leu, Cheng-Shiun</p>
-<p><strong>Bachelor of Science, Genetics &amp; Genomics</strong>, University of California, Davis, June 2018</p>
+<p>Master Student in Biostatistics<br />
+Columbia University Mailman School of Public Health</p>
+<p><img src = "images/D7K_9475.jpg" style = "width:70%" align = "middle"></p>
+<div id="about-myself" class="section level3">
+<h3>About myself</h3>
+<p>I graduated with a BS degree in Genetic &amp; Genomics from <a href="https://www.ucdavis.edu/">University of California, Davis</a> in June 2018 and jumped right into the master program in the Department of Biostatistics at Columbia Univeristy <a href="https://www.mailman.columbia.edu/">Mailman School of Public Health</a>.</p>
+<p>I always love to learn and try new things in this world. My interest in data science arose from the classes I have been taking and research experiences during my undergraduate years. I came into the master program with biology background as well as some statistical knowledge and programming skills (including R and Python). A genomics lab <a href="http://jnmaloof.github.io/BIS180L_web/">course</a> I took back then with <a href="https://biology.ucdavis.edu/people/julin-maloof">Julin Maloof</a> at UC Davis led me into this very exciting interdisplinary field of computational biology. I wish I could obtain more skills that enable me to make sense of the data through both quantitative analysis and visualztion of various type of data.</p>
 </div>
-<div id="areas-of-research-interest" class="section level3">
-<h3>AREAS OF RESEARCH INTEREST</h3>
-<p>Genetics and Genomics, Statistical Inference, Data Analysis and Visualization</p>
-</div>
-<div id="research-experience" class="section level3">
-<h3>RESEARCH EXPERIENCE</h3>
-<p><strong>Summer Undergraduate Research</strong>, Davis, CA (07/17 - 09/17)</p>
-<ul>
-<li>Simulated electrophysiological activities in cardiac tissue in MATLAB environment.</li>
-<li>Constructed a computational model of myocardial ischemia to investigate the mechanisms of arrhythmias.</li>
-<li>Performed data analysis of computation simulation.</li>
-<li>Presented the result at Undergraduate Research Conference at University of California, Davis.</li>
-</ul>
-<p>Advisor: Dr. Timothy J. Lewis, Dr. Daisuke Sato, Department of Mathematics</p>
-<p><strong>Undergraduate Research Assistant</strong>, Davis, CA (01/17 - 04/18)</p>
-<ul>
-<li>Performed mathematical analysis and multiscale modeling in MATLAB to understand molecular level properties of heart functions and potential factors that cause dysfunctions.</li>
-<li>Explored Hodgkin-Huxley model and Echebarria Karma model of neuronal electrochemical properties on both single cell and tissue level.</li>
-</ul>
-<p>PI: Dr. Daisuke Sato, Department of Pharmacology.</p>
-<p><strong>Undergraduate Research Assistant</strong>, Davis, CA (08/16 - 06/18)</p>
-<ul>
-<li>Specialized in mouse genotyping, husbandry, PCR, and gel electrophoresis.</li>
-<li>Examined the mechanisms of Brca2 and sycp3 proteins affecting mammalian meiotic recombination.<br />
-</li>
-<li>Discussed and explained results in pertinent scientific papers during journal club meetings.</li>
-</ul>
-<p>PI: Dr. Neil Hunter, Department of Microbiology &amp; Molecular Genetics.</p>
-</div>
-<div id="relevant-courseworks-and-training" class="section level3">
-<h3>RELEVANT COURSEWORKS AND TRAINING</h3>
-<p><strong>Data Science in R programming</strong>:</p>
-<ul>
-<li>Learning the critical components in data analysis pipeline including data wrangling, exploratory data analysis, visualization and reproducibility in R.</li>
-<li>Working on a midterm project of analyzing a large dataset of accelerometer physical activity counts.</li>
-</ul>
-<p><strong>Lab Course of Bioinformatics</strong>：</p>
-<ul>
-<li>Wrote scripts in R for data analysis and display.</li>
-<li>Analyzed Illumina sequencing data to find SNPs and differentially expressed genes from DNA and RNA sequencing data of Brassica rapa.</li>
-<li>Performed genome wide association study.</li>
-<li>Reconstructed clustering and genetic co-expression networks.</li>
-<li>Used git version control and cloud computing recourses like AWS.</li>
-</ul>
-<p><strong>Scientific Writing</strong>:</p>
-<ul>
-<li>Practiced writing scientific abstracts and journals.</li>
-<li>Wrote a literature review of the indicators of measuring excess body fat among children and adolescents including BMI.</li>
-</ul>
-</div>
-<div id="abstracts-and-presentations" class="section level3">
-<h3>ABSTRACTS AND PRESENTATIONS</h3>
-<p><strong>Undergraduate Research Conference at University of California (poster presentation)</strong>, Zixuan Zhang, Timothy J. Lewis, Daisuke Sato. “Stochastic Ion Channel Activity in Ischemic Regions of the Heart can Cause Reflected Waves,” Davis, CA, April 27, 2018</p>
-</div>
-<div id="teaching-experience" class="section level3">
-<h3>TEACHING EXPERIENCE</h3>
-<p><strong>Nutrition Education Program Intern</strong>, Davis, CA (01/ 16 - 06/16)</p>
-<ul>
-<li>Developed education curriculum for nutrition class for 30 disabled teenager participants in Davis area.</li>
-<li>Collaborated with 15 team members to edit newsletter to advertise upcoming course content.</li>
-<li>Brainstormed lesson ideas during group discussion twice a week.</li>
-</ul>
-<p>Advisor: Dr. Liz Applegate, Department of Nutrition.</p>
-</div>
-<div id="honors" class="section level3">
-<h3>HONORS</h3>
-<ul>
-<li>Recipient, Dean’s Honors List, College of Biological Sciences, Spring 2018</li>
-<li>Recipient, Dean’s Honors List, College of Biological Sciences, Spring 2017</li>
-</ul>
-</div>
-<div id="references" class="section level3">
-<h3>REFERENCES</h3>
-<p><strong>Timothy J. Lewis, Phd</strong> <a href="mailto:tjlewis@ucdavis.edu" class="email">tjlewis@ucdavis.edu</a></p>
-<p>Department of Mathematics, University of California, Davis, One Shields Avenue</p>
-<p>Davis, CA 95616</p>
-<p><strong>Daisuke Sato, Phd</strong> <a href="mailto:dsato@ucdavis.edu" class="email">dsato@ucdavis.edu</a></p>
-<p>Department of Pharmacology, University of California, Davis</p>
-<p>451 Health Sciences Drive, Suite 3503, Davis, CA 95616</p>
-<p><strong>Sumit Sandhu, Phd</strong> <a href="mailto:ssand@ucdavis.edu" class="email">ssand@ucdavis.edu</a></p>
-<p>Department of Microbiology &amp; Molecular Genetics, University of California, Davis</p>
-<p>One shields Avenue, Davis, CA 95616</p>
-</div>
+<div id="about-this-website" class="section level3">
+<h3>About this website</h3>
+<p>On this website, you will find my <a href="CV.html">CV</a> and some projects I have done and working on. This website serves as a platform of sharing my research and learning experience with the public fellows. You are welcome to check on my social media webpages or contact me by email!</p>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
