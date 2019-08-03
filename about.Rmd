@@ -1,0 +1,12 @@
+---
+title: "About this website"
+---
+
+This is a personal website initially created for a data science class at Mailman School of Public Health. It will be further developed to make it to the public for the purpose of self-introdction. The website is created in R environment and hosted on Github. The source code can be found on the author's Github [repository](https://zixuanzhang.github.io/eleanorzhang.github.io/). 
+
+The R packages I used for creating this website is:
+
+```{r, child="_session-infor.Rmd"}
+
+```
+

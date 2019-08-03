@@ -1,0 +1,163 @@
+---
+title: "Curriculum vitae"
+output:
+  html_document: 
+    toc: true
+    toc_float: true
+---
+
+## Eleanor Zhang 
+
+Email: zz2602@columbia.edu 
+
+Adress: 100 Haven Avenue, New York, 10032  
+
+Tel: (530) 979-4001 
+
+### EDUCATION 
+
+__Master of Science, Biostatistics__, Mailman School of Public Health, Columbia University, expected May 2020 
+
+Advisor: Leu, Cheng-Shiun 
+
+ 
+__Bachelor of Science, Genetics & Genomics__, University of California, Davis, June 2018 
+
+
+### AREAS OF RESEARCH INTEREST 
+
+Genetics and Genomics, Statistical Inference, Data Analysis and Visualization 
+
+
+### RESEARCH EXPERIENCE 
+
+__Summer Undergraduate Research__, Davis, CA (07/17 - 09/17) 
+
+* Simulated electrophysiological activities in cardiac tissue in MATLAB environment. 
+* Constructed a computational model of myocardial ischemia to investigate the mechanisms of arrhythmias. 
+* Performed data analysis of computation simulation. 
+* Presented the result at Undergraduate Research Conference at University of California, Davis.  
+
+Advisor: Dr. Timothy J. Lewis, Dr. Daisuke Sato, Department of Mathematics 
+
+
+__Undergraduate Research Assistant__, Davis, CA (01/17 - 04/18) 
+
+* Performed mathematical analysis and multiscale modeling in MATLAB to understand molecular level properties of heart functions and potential factors that cause dysfunctions. 
+* Explored Hodgkin-Huxley model and Echebarria Karma model of neuronal electrochemical properties on both single cell and tissue level.  
+
+PI: Dr. Daisuke Sato, Department of Pharmacology. 
+
+
+__Undergraduate Research Assistant__, Davis, CA (08/16 - 06/18) 
+
+* Specialized in mouse genotyping, husbandry, PCR, and gel electrophoresis. 
+* Examined the mechanisms of Brca2 and sycp3 proteins affecting mammalian meiotic recombination.  
+* Discussed and explained results in pertinent scientific papers during journal club meetings. 
+
+PI: Dr. Neil Hunter, Department of Microbiology & Molecular Genetics. 
+
+
+### RELEVANT COURSEWORKS AND TRAINING 
+
+__Data Science in R programming__: 
+
+* Learning the critical components in data analysis pipeline including data wrangling, exploratory data analysis, visualization and reproducibility in R. 
+* Working on a midterm project of analyzing a large dataset of accelerometer physical activity counts. 
+     
+
+__Lab Course of Bioinformatics__： 
+
+* Wrote scripts in R for data analysis and display. 
+* Analyzed Illumina sequencing data to find SNPs and differentially expressed genes from DNA and RNA sequencing data of Brassica rapa. 
+* Performed genome wide association study. 
+* Reconstructed clustering and genetic co-expression networks. 
+* Used git version control and cloud computing recourses like AWS. 
+
+__Scientific Writing__: 
+
+* Practiced writing scientific abstracts and journals. 
+* Wrote a literature review of the indicators of measuring excess body fat among children and adolescents including BMI. 
+
+
+### ABSTRACTS AND PRESENTATIONS 
+
+__Undergraduate Research Conference at University of California (poster presentation)__, Zixuan Zhang, Timothy J. Lewis, Daisuke Sato. “Stochastic Ion Channel Activity in Ischemic Regions of the Heart can Cause Reflected Waves,” Davis, CA, April 27, 2018 
+
+
+### TEACHING EXPERIENCE 
+
+__Nutrition Education Program Intern__, Davis, CA (01/ 16 - 06/16) 
+
+* Developed education curriculum for nutrition class for 30 disabled teenager participants in Davis area. 
+* Collaborated with 15 team members to edit newsletter to advertise upcoming course content. 
+* Brainstormed lesson ideas during group discussion twice a week.  
+
+Advisor: Dr. Liz Applegate, Department of Nutrition. 
+
+### HONORS 
+
+* Recipient, Dean’s Honors List, College of Biological Sciences, Spring 2018 
+* Recipient, Dean’s Honors List, College of Biological Sciences, Spring 2017 
+
+
+### REFERENCES 
+
+__Timothy J. Lewis, Phd__            tjlewis@ucdavis.edu 
+
+Department of Mathematics, University of California, Davis, One Shields Avenue 
+
+Davis, CA 95616 
+
+
+__Daisuke Sato, Phd__               dsato@ucdavis.edu 
+
+Department of Pharmacology, University of California, Davis  
+
+451 Health Sciences Drive, Suite 3503, Davis, CA 95616 
+
+ 
+__Sumit Sandhu, Phd__              ssand@ucdavis.edu 
+
+Department of Microbiology & Molecular Genetics, University of California, Davis 
+
+One shields Avenue, Davis, CA 95616 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
