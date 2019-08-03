@@ -11,7 +11,7 @@ Columbia University Mailman School of Public Health
 <img src = "images/D7K_9718.jpg" style = "width:70%" align = "middle">
 
 
-### About myself
+### About 
 
 I graduated with a BS degree in Genetic & Genomics from [University of California, Davis](https://www.ucdavis.edu/) in June 2018 and jumped right into the master program in the Department of Biostatistics at Columbia Univeristy [Mailman School of Public Health](https://www.mailman.columbia.edu/). 
 
@@ -21,4 +21,11 @@ I always love to learn and try new things in this world. My interest in data sci
 
 On this website, you will find my [CV](CV.html) and some projects I have done and working on. This website serves as a platform of sharing my research and learning experience with the public fellows. You are welcome to check on my social media webpages or contact me by email!
 
+### Contact information
 
+Eleanor (Zixuan) Zhang  
+Department of Biostatistics
+Columbia Mailman School of Public Health
+
+Email: zz2602@columbia.edu  
+Phone: 530-979-4001
