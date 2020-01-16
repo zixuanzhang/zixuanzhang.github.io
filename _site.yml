@@ -6,8 +6,12 @@ navbar:
   left:
     - text: CV
       href: CV.html
-    - text: Project
+    - text: Project1
       href: p8105_mtp_zz2602.html
+    - text: Project2
+      href: http://shanj.tk/P8105_final_website.io/index.html
+    - text: Project3
+      href: Final_project.pdf
      # menu:
       #- text: Accelerometer data
       #- href: p8105_mtp_zz2602.html
