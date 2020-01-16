@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -85,7 +85,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -234,6 +233,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -245,18 +245,6 @@ $(document).ready(function () {
   display: none;
 }
 </style>
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
 
 <!-- code folding -->
 
@@ -290,22 +278,22 @@ $(document).ready(function () {
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    Research
+    Project
      
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li class="dropdown-header">Alzheimer Disease</li>
+    <li class="dropdown-header">Accelerometer data</li>
     <li>
-      <a href="AD.html"></a>
+      <a href="p8105_mtp_zz2602.html"></a>
     </li>
-    <li class="dropdown-header">Cardio-disease</li>
+    <li class="dropdown-header">Job outlook website</li>
     <li>
-      <a href="gapmodel.html"></a>
+      <a href="http://shanj.tk/P8105_final_website.io/index.html"></a>
     </li>
-    <li class="dropdown-header">Genetics</li>
+    <li class="dropdown-header">DNA methylation Project</li>
     <li>
-      <a href="hunterlab.html"></a>
+      <a href="Final_project.pdf"></a>
     </li>
   </ul>
 </li>
@@ -353,13 +341,13 @@ $(document).ready(function () {
 <p>The R packages I used for creating this website is:</p>
 <p>Session information</p>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 3.5.3 (2019-03-11)
+<pre><code>## R version 3.6.1 (2019-07-05)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
 ## Running under: macOS Mojave 10.14
 ## 
 ## Matrix products: default
-## BLAS: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRblas.0.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
+## BLAS:   /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRblas.0.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
@@ -368,10 +356,10 @@ $(document).ready(function () {
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] compiler_3.5.3  magrittr_1.5    tools_3.5.3     htmltools_0.3.6
-##  [5] yaml_2.2.0      Rcpp_1.0.1      stringi_1.4.3   rmarkdown_1.12 
-##  [9] knitr_1.22      stringr_1.4.0   xfun_0.6        digest_0.6.18  
-## [13] evaluate_0.13</code></pre>
+##  [1] compiler_3.6.1  magrittr_1.5    tools_3.6.1     htmltools_0.4.0
+##  [5] yaml_2.2.0      Rcpp_1.0.3      stringi_1.4.3   rmarkdown_2.0  
+##  [9] knitr_1.26      stringr_1.4.0   xfun_0.11       digest_0.6.23  
+## [13] rlang_0.4.2     evaluate_0.14</code></pre>
 
 
 
@@ -390,6 +378,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
