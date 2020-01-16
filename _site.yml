@@ -6,14 +6,14 @@ navbar:
   left:
     - text: CV
       href: CV.html
-    - text: Research
+    - text: Project
       menu:
-      - text: Alzheimer Disease
-      - href: AD.html
-      - text: Cardio-disease
-      - href: gapmodel.html
-      - text: Genetics 
-      - href: hunterlab.html
+      - text: Accelerometer data
+      - href: p8105_mtp_zz2602.html
+      - text: Job outlook website
+      - href: http://shanj.tk/P8105_final_website.io/index.html
+      - text: DNA methylation Project
+      - href: Final_project.pdf
     - text: Data camper
       href: datacamp_about.html
 
