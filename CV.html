@@ -13,12 +13,22 @@
 
 <title>Curriculum vitae</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -28,12 +38,16 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-<style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -46,32 +60,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -81,10 +71,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -101,40 +87,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h2 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h3 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h4 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h5 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
-.section h6 {
-  padding-top: 65px;
-  margin-top: -65px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -162,7 +124,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -174,7 +136,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -185,10 +147,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -200,7 +175,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -326,7 +300,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -340,7 +314,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -351,9 +325,6 @@ div.tocify {
       <ul class="nav navbar-nav">
         <li>
   <a href="CV.html">CV</a>
-</li>
-<li>
-  <a href="p8105_mtp_zz2602.html">Project1</a>
 </li>
 <li>
   <a href="http://shanj.tk/P8105_final_website.io/index.html">Project2</a>
@@ -392,7 +363,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -403,75 +374,105 @@ div.tocify {
 
 <div id="eleanor-zhang" class="section level2">
 <h2>Eleanor Zhang</h2>
-<p>Email: <a href="mailto:zz2602@columbia.edu" class="email">zz2602@columbia.edu</a></p>
+<p>Email: <a href="mailto:zz2602@columbia.edu"
+class="email">zz2602@columbia.edu</a></p>
 <p>Adress: 100 Haven Avenue, New York, 10032</p>
 <p>Tel: (530) 979-4001</p>
 <div id="education" class="section level3">
 <h3>EDUCATION</h3>
-<p><strong>Master of Science, Biostatistics</strong>, Mailman School of Public Health, Columbia University, expected May 2020</p>
+<p><strong>Master of Science, Biostatistics</strong>, Mailman School of
+Public Health, Columbia University, expected May 2020</p>
 <p>Advisor: Leu, Cheng-Shiun</p>
-<p><strong>Bachelor of Science, Genetics &amp; Genomics</strong>, University of California, Davis, June 2018</p>
+<p><strong>Bachelor of Science, Genetics &amp; Genomics</strong>,
+University of California, Davis, June 2018</p>
 </div>
 <div id="areas-of-research-interest" class="section level3">
 <h3>AREAS OF RESEARCH INTEREST</h3>
-<p>Genetics and Genomics, Statistical Inference, Data Analysis and Visualization</p>
+<p>Genetics and Genomics, Statistical Inference, Data Analysis and
+Visualization</p>
 </div>
 <div id="research-experience" class="section level3">
 <h3>RESEARCH EXPERIENCE</h3>
-<p><strong>Summer Undergraduate Research</strong>, Davis, CA (07/17 - 09/17)</p>
+<p><strong>Summer Undergraduate Research</strong>, Davis, CA (07/17 -
+09/17)</p>
 <ul>
-<li>Simulated electrophysiological activities in cardiac tissue in MATLAB environment.</li>
-<li>Constructed a computational model of myocardial ischemia to investigate the mechanisms of arrhythmias.</li>
+<li>Simulated electrophysiological activities in cardiac tissue in
+MATLAB environment.</li>
+<li>Constructed a computational model of myocardial ischemia to
+investigate the mechanisms of arrhythmias.</li>
 <li>Performed data analysis of computation simulation.</li>
-<li>Presented the result at Undergraduate Research Conference at University of California, Davis.</li>
+<li>Presented the result at Undergraduate Research Conference at
+University of California, Davis.</li>
 </ul>
-<p>Advisor: Dr. Timothy J. Lewis, Dr. Daisuke Sato, Department of Mathematics</p>
-<p><strong>Undergraduate Research Assistant</strong>, Davis, CA (01/17 - 04/18)</p>
+<p>Advisor: Dr. Timothy J. Lewis, Dr. Daisuke Sato, Department of
+Mathematics</p>
+<p><strong>Undergraduate Research Assistant</strong>, Davis, CA (01/17 -
+04/18)</p>
 <ul>
-<li>Performed mathematical analysis and multiscale modeling in MATLAB to understand molecular level properties of heart functions and potential factors that cause dysfunctions.</li>
-<li>Explored Hodgkin-Huxley model and Echebarria Karma model of neuronal electrochemical properties on both single cell and tissue level.</li>
+<li>Performed mathematical analysis and multiscale modeling in MATLAB to
+understand molecular level properties of heart functions and potential
+factors that cause dysfunctions.</li>
+<li>Explored Hodgkin-Huxley model and Echebarria Karma model of neuronal
+electrochemical properties on both single cell and tissue level.</li>
 </ul>
 <p>PI: Dr. Daisuke Sato, Department of Pharmacology.</p>
-<p><strong>Undergraduate Research Assistant</strong>, Davis, CA (08/16 - 06/18)</p>
+<p><strong>Undergraduate Research Assistant</strong>, Davis, CA (08/16 -
+06/18)</p>
 <ul>
-<li>Specialized in mouse genotyping, husbandry, PCR, and gel electrophoresis.</li>
-<li>Examined the mechanisms of Brca2 and sycp3 proteins affecting mammalian meiotic recombination.<br />
+<li>Specialized in mouse genotyping, husbandry, PCR, and gel
+electrophoresis.</li>
+<li>Examined the mechanisms of Brca2 and sycp3 proteins affecting
+mammalian meiotic recombination.<br />
 </li>
-<li>Discussed and explained results in pertinent scientific papers during journal club meetings.</li>
+<li>Discussed and explained results in pertinent scientific papers
+during journal club meetings.</li>
 </ul>
-<p>PI: Dr. Neil Hunter, Department of Microbiology &amp; Molecular Genetics.</p>
+<p>PI: Dr. Neil Hunter, Department of Microbiology &amp; Molecular
+Genetics.</p>
 </div>
 <div id="relevant-courseworks-and-training" class="section level3">
 <h3>RELEVANT COURSEWORKS AND TRAINING</h3>
 <p><strong>Data Science in R programming</strong>:</p>
 <ul>
-<li>Learning the critical components in data analysis pipeline including data wrangling, exploratory data analysis, visualization and reproducibility in R.</li>
-<li>Working on a midterm project of analyzing a large dataset of accelerometer physical activity counts.</li>
+<li>Learning the critical components in data analysis pipeline including
+data wrangling, exploratory data analysis, visualization and
+reproducibility in R.</li>
+<li>Working on a midterm project of analyzing a large dataset of
+accelerometer physical activity counts.</li>
 </ul>
 <p><strong>Lab Course of Bioinformatics</strong>：</p>
 <ul>
 <li>Wrote scripts in R for data analysis and display.</li>
-<li>Analyzed Illumina sequencing data to find SNPs and differentially expressed genes from DNA and RNA sequencing data of Brassica rapa.</li>
+<li>Analyzed Illumina sequencing data to find SNPs and differentially
+expressed genes from DNA and RNA sequencing data of Brassica rapa.</li>
 <li>Performed genome wide association study.</li>
 <li>Reconstructed clustering and genetic co-expression networks.</li>
-<li>Used git version control and cloud computing recourses like AWS.</li>
+<li>Used git version control and cloud computing recourses like
+AWS.</li>
 </ul>
 <p><strong>Scientific Writing</strong>:</p>
 <ul>
 <li>Practiced writing scientific abstracts and journals.</li>
-<li>Wrote a literature review of the indicators of measuring excess body fat among children and adolescents including BMI.</li>
+<li>Wrote a literature review of the indicators of measuring excess body
+fat among children and adolescents including BMI.</li>
 </ul>
 </div>
 <div id="abstracts-and-presentations" class="section level3">
 <h3>ABSTRACTS AND PRESENTATIONS</h3>
-<p><strong>Undergraduate Research Conference at University of California (poster presentation)</strong>, Zixuan Zhang, Timothy J. Lewis, Daisuke Sato. “Stochastic Ion Channel Activity in Ischemic Regions of the Heart can Cause Reflected Waves,” Davis, CA, April 27, 2018</p>
+<p><strong>Undergraduate Research Conference at University of California
+(poster presentation)</strong>, Zixuan Zhang, Timothy J. Lewis, Daisuke
+Sato. “Stochastic Ion Channel Activity in Ischemic Regions of the Heart
+can Cause Reflected Waves,” Davis, CA, April 27, 2018</p>
 </div>
 <div id="teaching-experience" class="section level3">
 <h3>TEACHING EXPERIENCE</h3>
-<p><strong>Nutrition Education Program Intern</strong>, Davis, CA (01/ 16 - 06/16)</p>
+<p><strong>Nutrition Education Program Intern</strong>, Davis, CA (01/
+16 - 06/16)</p>
 <ul>
-<li>Developed education curriculum for nutrition class for 30 disabled teenager participants in Davis area.</li>
-<li>Collaborated with 15 team members to edit newsletter to advertise upcoming course content.</li>
+<li>Developed education curriculum for nutrition class for 30 disabled
+teenager participants in Davis area.</li>
+<li>Collaborated with 15 team members to edit newsletter to advertise
+upcoming course content.</li>
 <li>Brainstormed lesson ideas during group discussion twice a week.</li>
 </ul>
 <p>Advisor: Dr. Liz Applegate, Department of Nutrition.</p>
@@ -479,20 +480,28 @@ div.tocify {
 <div id="honors" class="section level3">
 <h3>HONORS</h3>
 <ul>
-<li>Recipient, Dean’s Honors List, College of Biological Sciences, Spring 2018</li>
-<li>Recipient, Dean’s Honors List, College of Biological Sciences, Spring 2017</li>
+<li>Recipient, Dean’s Honors List, College of Biological Sciences,
+Spring 2018</li>
+<li>Recipient, Dean’s Honors List, College of Biological Sciences,
+Spring 2017</li>
 </ul>
 </div>
 <div id="references" class="section level3">
 <h3>REFERENCES</h3>
-<p><strong>Timothy J. Lewis, Phd</strong> <a href="mailto:tjlewis@ucdavis.edu" class="email">tjlewis@ucdavis.edu</a></p>
-<p>Department of Mathematics, University of California, Davis, One Shields Avenue</p>
+<p><strong>Timothy J. Lewis, Phd</strong> <a
+href="mailto:tjlewis@ucdavis.edu"
+class="email">tjlewis@ucdavis.edu</a></p>
+<p>Department of Mathematics, University of California, Davis, One
+Shields Avenue</p>
 <p>Davis, CA 95616</p>
-<p><strong>Daisuke Sato, Phd</strong> <a href="mailto:dsato@ucdavis.edu" class="email">dsato@ucdavis.edu</a></p>
+<p><strong>Daisuke Sato, Phd</strong> <a href="mailto:dsato@ucdavis.edu"
+class="email">dsato@ucdavis.edu</a></p>
 <p>Department of Pharmacology, University of California, Davis</p>
 <p>451 Health Sciences Drive, Suite 3503, Davis, CA 95616</p>
-<p><strong>Sumit Sandhu, Phd</strong> <a href="mailto:ssand@ucdavis.edu" class="email">ssand@ucdavis.edu</a></p>
-<p>Department of Microbiology &amp; Molecular Genetics, University of California, Davis</p>
+<p><strong>Sumit Sandhu, Phd</strong> <a href="mailto:ssand@ucdavis.edu"
+class="email">ssand@ucdavis.edu</a></p>
+<p>Department of Microbiology &amp; Molecular Genetics, University of
+California, Davis</p>
 <p>One shields Avenue, Davis, CA 95616</p>
 </div>
 </div>
@@ -508,7 +517,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -526,7 +535,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -535,6 +544,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -547,7 +559,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
