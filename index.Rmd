@@ -8,7 +8,7 @@ Master Student in Biostatistics
 Columbia University Mailman School of Public Health
 
 
-<img src = "images/D7K_9718.jpg" style = "width:70%" align = "middle">
+<img src = "images/D7K_9718.jpg" width="50%" height="50%" align = "middle">
 
 
 ### About 
