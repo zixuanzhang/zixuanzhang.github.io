@@ -10,8 +10,6 @@ output:
 
 Email: zzhang39@usc.edu 
 
-Tel: (530) 979-4001 
-
 ### EDUCATION 
 
 __Master of Science, Biostatistics__, Mailman School of Public Health, Columbia University, expected May 2020 

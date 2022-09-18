@@ -6,7 +6,9 @@ navbar:
   left:
     - text: CV
       href: CV.html
-    - text: Project2
+    - text: FactorGO project
+      href: http://shanj.tk/P8105_final_website.io/index.html
+    - text: RadTest project
       href: http://shanj.tk/P8105_final_website.io/index.html
     - text: Project3
       href: Final_project.pdf
@@ -17,11 +19,13 @@ navbar:
     - text: "About"
       href: about.html
     - icon: fa-envelope fa-lg
-      href: mailto:<zz2602@columbia.edu>
+      href: mailto:<zzhang39@usc.edu>
     - icon: fa-linkedin
-      href: https://www.linkedin.com/in/eleanor-zhang-65a769121/
+      href: https://www.linkedin.com/in/zixuan-z-65a769121/
     - icon: fa-github fa-lg
       href: http://github.com/zixuanzhang
+    - icon: fa-fw fa-twitter-square
+      href: https://twitter.com/elezzx2020
 output:
   html_document:
      theme: flatly
