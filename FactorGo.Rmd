@@ -1,0 +1,38 @@
+---
+title: "FactorGO project"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Background 
+
+* Biobank genome-wide association studies ([GWAS](https://pubmed.ncbi.nlm.nih.gov/28686856/)) identified thousands of genetic variants associated with human phenotypic traits. 
+revealed pleiotropy in genetic variants and provide opportunities to learn shared biological functions.  
+* [Previous work](https://www.nature.com/articles/s41467-019-11953-9) proposed truncated singular-value decomposition (tSVD) on multiple GWAS summary data to characterize shared latent genetic components, which uses effect sizes from GWAS significant variants without modeling effect size uncertainty. 
+* We propose __FactorGO__, a factor analysis model on genetic association to account for uncertainty in effect-size estimates and leverage an automatic relevance determination (ARD) prior to prune uninformative factors.
+
+## Method
+
+<img src = "images/FactorGO_Diagram.png" style = "width:70%" align = "middle">
+
+
+## Result
+
+### Runtime comparison
+
+FactorGO under a transformation method substantially improves convergence rate, which make its run time on 2-cores GPU comparable to tSVD:
+
+<img src = "images/runtime.png" width="50%" height="50%" align = "middle">
+
+### Top two factors
+
+
+### Case study 1: Human height
+
+
+### Case study 2: Rheumatoid arthritis 
+
+
