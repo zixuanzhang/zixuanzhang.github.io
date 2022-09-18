@@ -12,8 +12,6 @@ navbar:
       href: http://shanj.tk/P8105_final_website.io/index.html
     - text: Project3
       href: Final_project.pdf
-    - text: Data camper
-      href: datacamp_about.html
 
   right:
     - text: "About"
