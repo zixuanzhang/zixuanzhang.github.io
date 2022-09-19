@@ -1,7 +1,8 @@
 ---
-title: "FactorGO project"
-output: 
-   html_document
+title: "FactorGO"
+author: "Eleanor Zhang"
+date: '2022-09-19'
+output: html_document
 ---
 
 ## Background 
@@ -31,5 +32,3 @@ FactorGO under a transformation method substantially improves convergence rate, 
 
 
 ### Case study 2: Rheumatoid arthritis 
-
-
