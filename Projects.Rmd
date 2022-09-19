@@ -1,0 +1,29 @@
+---
+title: "Projects"
+author: "Eleanor Zhang"
+date: '2022-09-19'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Project list
+
+### FactorGO
+
+This is a project about [FactorGO](./FactorGO.html)
+
+### RadTest 
+
+Test for rare variants
+
+### Gap Model
+
+Cardiovascular
+
+
+### Class project
+
+[Final project](Final_project.pdf)

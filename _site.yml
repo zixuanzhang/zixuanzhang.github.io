@@ -4,14 +4,10 @@ navbar:
   title: "Home"
   href: index.html
   left:
-    - text: CV
+    - text: "CV"
       href: CV.html
-    - text: FactorGO project
-      href: FactorGO.html
-    - text: RadTest project
-      href: http://shanj.tk/P8105_final_website.io/index.html
-    - text: Gap model
-      href: Final_project.pdf
+    - text: "Projects"
+      href: Projects.html
 
   right:
     - text: "About"
