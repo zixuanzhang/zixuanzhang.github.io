@@ -6,8 +6,10 @@ navbar:
   left:
     - text: "CV"
       href: CV.html
-    - text: "Projects"
-      href: Projects.html
+    - text: "FactorGO"
+      href: FactorGo.html
+    - text: "RaDtest"
+      href: RaDtest.html
 
   right:
     - text: "About"
