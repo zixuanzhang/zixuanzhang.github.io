@@ -1,30 +1,29 @@
 ---
-title: "Eleanor Zhang"
+title: "Zixuan (Eleanor) Zhang"
 output:
   html_document
 ---
 
-Master Student in Biostatistics   
-Columbia University Mailman School of Public Health
-
-
-<img src = "images/D7K_9718.jpg" width="50%" height="50%" align = "middle">
-
+PhD Student in Biostatistics   
+Department of Population and Public Health Science  
+University of Southern California 
 
 ### About 
 
-I graduated with a BS degree in Genetic & Genomics from [University of California, Davis](https://www.ucdavis.edu/) in June 2018 and jumped right into the master program in the Department of Biostatistics at Columbia Univeristy [Mailman School of Public Health](https://www.mailman.columbia.edu/). 
+My name is Zixuan (Eleanor) Zhang, third year PhD student in Biostatistics in the Department of Population and Public Health Sciences ([PPHS](https://pphs.usc.edu/))  at University of Southern California ([USC](https://www.usc.edu/)).My research interest is developing statistical approach applied in GWAS studies to better understand shared components among human phenotypic traits. It is a real blessing to be co-mentored by Dr. [Nicholas Mancuso](https://www.mancusolab.com/lab-members) and Dr.[Steven Gazal](https://gazal-lab.org/lab-members), both of whom never run out of great ideas in the field of statistical genetics and graciously gave me strong academic support.
 
-I always love to learn and try new things in this world. My interest in data science arose from the classes I have been taking and research experiences during my undergraduate years. I came into the master program with biology background as well as some statistical knowledge and programming skills (including R and Python). A genomics lab [course](http://jnmaloof.github.io/BIS180L_web/) I took back then with [Julin Maloof](https://biology.ucdavis.edu/people/julin-maloof) at UC Davis led me into this very exciting interdisplinary field of computational biology. I wish I could obtain more skills that enable me to make sense of the data through both quantitative analysis and visualztion of various type of data.
+I graduated with a BS degree in Genetic & Genomics from [University of California, Davis](https://www.ucdavis.edu/) in June 2018 and received Master degree in Biostatistics in the Department of Biostatistics at Columbia Univeristy [Mailman School of Public Health](https://www.mailman.columbia.edu/). 
 
 ### About this website
 
 On this website, you will find my [CV](resume_zzx.pdf) and some projects I have done and working on. This website serves as a platform of sharing my research and learning experience with the public fellows. You are welcome to check on my social media webpages or contact me by email!
 
-### Contact information
+### Contact
 
-Eleanor (Zixuan) Zhang  
-Department of Biostatistics
-Columbia Mailman School of Public Health
+Zixuan (Eleanor) Zhang  
+Department of Population and Public Health Science  
+University of Southern California
 
 Email: zzhang39@usc.edu  
+
+<img src = "images/D7K_9718.jpg" width="50%" height="50%" align = "middle">
