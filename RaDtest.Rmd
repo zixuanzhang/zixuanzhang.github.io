@@ -33,8 +33,9 @@ H1: RR > 1
 $$
 We assume that the relative risk of a missense variant in a true risk gene is correlated with _in silico_ predicted deleteriousness (prediced by REVEL score) and this relationship can be captured by a sigmoid function (soft threshold). The weight of each missense variants for a given region or a gene by their in silico prediction (x) in a sigmoid function f(x) = L/(1 + exp(- K * (x - x0)), and then use logistic regression to test the association. When K is sufficiently large, the sigmoid weight function changes abruptly at midpoint such that it is equivalent to a hard threshold. For example in the plot below, for a genetic variant with REVEL score 0.5 (dashed) and score 0.9 (solid), the weight function gets closer to hard threshold when K increases.
 
+<p align="center">
 <img src = "images/sigmoid_weight.png" width="50%" height="50%" align = "middle">
-
+<p>
 
 For a given gene, RaDtest search for an optimal threshold $x_0$ for REVEL score where the maximal significance in case-control comparison is reached with smallest p-value $ps_{0}$. Statistical significance is evaluated by permuting class labels of cases and controls. In each permutation, we repeat the searching of $x_0$  and record the smallest p value $ps_{i}$. We define empirical p value as $(Np+1)/(N+1)$, where Np is the number of permutations for which $ps_{i}$ is smaller than $ps_{0}$ out of total N permutation.
 

@@ -10,6 +10,8 @@ navbar:
       href: FactorGo.html
     - text: "RaDtest"
       href: RaDtest.html
+    - text: "Gap model"
+      href: Gap_model.html
 
   right:
     - text: "About"

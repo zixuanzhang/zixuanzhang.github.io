@@ -11,9 +11,9 @@
 
 <meta name="author" content="Eleanor Zhang" />
 
-<meta name="date" content="2022-09-19" />
+<meta name="date" content="2022-10-01" />
 
-<title>FactorGO</title>
+<title>Gap model</title>
 
 <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -299,9 +299,9 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">FactorGO</h1>
+<h1 class="title toc-ignore">Gap model</h1>
 <h4 class="author">Eleanor Zhang</h4>
-<h4 class="date">2022-09-19</h4>
+<h4 class="date">2022-10-01</h4>
 
 </div>
 
@@ -309,45 +309,89 @@ $(document).ready(function () {
 <div id="background" class="section level2">
 <h2>Background</h2>
 <ul>
-<li>Biobank genome-wide association studies (<a
-href="https://pubmed.ncbi.nlm.nih.gov/28686856/">GWAS</a>) identified
-thousands of genetic variants associated with human phenotypic traits.
-revealed pleiotropy in genetic variants and provide opportunities to
-learn shared biological functions.<br />
+<li>Sudden cardiac arrest (SCA) is the leading cause of natural death in
+the United States. SCA most often results from aberrant heart rhythms,
+known as arrhythmias, which can be triggered by the presence of
+myocardial ischemia.<br />
 </li>
-<li><a
-href="https://www.nature.com/articles/s41467-019-11953-9">Previous
-work</a> proposed truncated singular-value decomposition (tSVD) on
-multiple GWAS summary data to characterize shared latent genetic
-components, which uses effect sizes from GWAS significant variants
-without modeling effect size uncertainty.</li>
-<li>We propose <strong>FactorGO</strong>, a factor analysis model on
-genetic association to account for uncertainty in effect-size estimates
-and leverage an automatic relevance determination (ARD) prior to prune
-uninformative factors.</li>
+<li>Ischemic regions have been shown to give to rise to reflected waves,
+i.e., a wave propagation in one direction induces another wave to travel
+in retrograde direction.<br />
+</li>
+<li>Reflected waves have been linked to the onset of life threatening
+cardiac arrest.<br />
+</li>
+<li>Here we constructed an idealized model of heart tissue with an
+ischemic region and examine how stochastic ion channel dynamics can
+affect the propensity of reflected waves.</li>
 </ul>
 </div>
-<div id="method" class="section level2">
-<h2>Method</h2>
-<p><img src = "images/FactorGO_Diagram.png" style = "width:70%" align = "middle"></p>
+<div id="single-cardiac-cell-model" class="section level2">
+<h2>Single cardiac cell model</h2>
+<p><span class="math display">\[
+\begin{align}
+\frac{\partial u}{\partial t} &amp;= f(u,w) = I - g_{Ca} m_{\infty} (u -
+E_{K}) - g_{K} m_{\infty} (u - E_{K}) - g_{L} (u - E_{L}) \\
+\frac{\partial w}{\partial t} &amp;= g(u, w) =  \alpha(u)(1-w) -
+\beta(u) w
+\end{align}
+\]</span></p>
+<p>The following is an illustrative picture for this model:</p>
+<p align="center">
+<img src = "images/Gap_illustrate.png" width="50%" align = "middle">
+</p>
+<div id="determinstic-case" class="section level3">
+<h3>Determinstic case</h3>
+<p>Cardiac cell can be excited by a “current” that passes some
+threshold</p>
+<p align="center">
+<img src = "images/Gap_determinstic.png" width="70%" hight="70%" align = "middle">
+</p>
+<p>Here we simulate 1000 cardiac cells, then the probability of cell
+firing changes as the strength of current.</p>
+<p align="center">
+<img src = "images/Gap_stochastic.png" width="70%" hight="70%" align = "middle">
+</p>
 </div>
-<div id="result" class="section level2">
-<h2>Result</h2>
-<div id="runtime-comparison" class="section level3">
-<h3>Runtime comparison</h3>
-<p>FactorGO under a transformation method substantially improves
-convergence rate, which make its run time on 2-cores GPU comparable to
-tSVD:</p>
-<p><img src = "images/runtime.png" width="50%" height="50%" align = "middle"></p>
 </div>
-<div id="top-two-factors" class="section level3">
-<h3>Top two factors</h3>
+<div id="d-cardiac-tissue-model" class="section level2">
+<h2>1D cardiac tissue model</h2>
+<p>1D Reaction diffusion model capture the spatiotemporal behavior of
+the heart tissue: <span class="math display">\[
+\begin{align}
+u_t &amp;= f(u,w) = (D(x) u_x)_x + s(x) f(u, w) \\
+w_t &amp;= g(u, w)
+\end{align}
+\]</span></p>
+<p>Illustrative picture:</p>
+<p align="center">
+<img src = "images/1D_model.png" width="50%" align = "middle">
+</p>
 </div>
-<div id="case-study-1-human-height" class="section level3">
-<h3>Case study 1: Human height</h3>
+<div id="simulate-wave-propagation-through-ischemic-tissue"
+class="section level2">
+<h2>Simulate wave propagation through ischemic tissue</h2>
+<p>We excite the cable from the proximal side to generate a wave of
+excitation and prescribe three different lengths of ischemic tissue
+(gap). We use N:M to denote the wave pattern on the panel, where N is
+the number of waves on the proximal side of the gap, and M is the number
+of waves on the distal side.</p>
+<div id="deterministic-case" class="section level3">
+<h3>Deterministic case</h3>
+<p>membrane potential surface plot displayed below</p>
+<p align="center">
+<img src = "images/Gap_det_result.png" width="70%" hight="70%" align = "middle">
+</p>
 </div>
-<div id="case-study-2-rheumatoid-arthritis" class="section level3">
-<h3>Case study 2: Rheumatoid arthritis</h3>
+<div id="stochastic-case" class="section level3">
+<h3>Stochastic case</h3>
+<p>Stochastic property will manifest itself when the number of ion
+channels is relatively low. We experiment with the system using ion
+channel numbers ranging from 10 to 1000 for each prescribed gap
+length.</p>
+<p align="center">
+<img src = "images/Gap_stochastic_result.png" width="70%" hight="70%" align = "middle">
+</p>
 </div>
 </div>
 
