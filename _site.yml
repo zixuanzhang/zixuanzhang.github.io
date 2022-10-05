@@ -4,8 +4,8 @@ navbar:
   title: "Home"
   href: index.html
   left:
-    - text: "CV"
-      href: CV.html
+    - text: "Resume"
+      href: ZixuanZhang_resume.pdf
     - text: "FactorGO"
       href: FactorGo.html
     - text: "RaDtest"
