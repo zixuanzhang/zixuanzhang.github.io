@@ -311,44 +311,111 @@ $(document).ready(function () {
 <ul>
 <li>Biobank genome-wide association studies (<a
 href="https://pubmed.ncbi.nlm.nih.gov/28686856/">GWAS</a>) identified
-thousands of genetic variants associated with human phenotypic traits.
-revealed pleiotropy in genetic variants and provide opportunities to
-learn shared biological functions.<br />
+thousands of genetic variants associated with human phenotypic
+traits.<br />
+</li>
+<li>Pleiotropy is pervasive in genetic variants (one variant affects
+multiple traits) and thus provide opportunities learn shared mechanisms
+among human phenotypic traits through the lens of shared genetic
+associations.<br />
 </li>
 <li><a
 href="https://www.nature.com/articles/s41467-019-11953-9">Previous
 work</a> proposed truncated singular-value decomposition (tSVD) on
 multiple GWAS summary data to characterize shared latent genetic
-components, which uses effect sizes from GWAS significant variants
-without modeling effect size uncertainty.</li>
+pleiotropic factors, which uses effect sizes from GWAS significant
+variants without modeling effect size uncertainty.</li>
 <li>We propose <strong>FactorGO</strong>, a factor analysis model on
 genetic association to account for uncertainty in effect-size estimates
-and leverage an automatic relevance determination (ARD) prior to prune
-uninformative factors.</li>
+and leverage an automatic relevance determination (ARD) prior to control
+sparsity on factor loadings.</li>
 </ul>
 </div>
-<div id="method" class="section level2">
-<h2>Method</h2>
+<div id="study-overview" class="section level2">
+<h2>Study overview</h2>
+<p>We constructed data matrix of Z score summmary statistics for 51,399
+genetic variants among 2,483 traits from <a
+href="https://pan.ukbb.broadinstitute.org/">Pan-UK Biobank</a>. After
+inferring K=100 latent factors, we interpret each factor by:<br />
+1) Fig b: quantify relative importance of trait within a factor by
+contribution score, as described <a
+href="https://www.nature.com/articles/s41467-019-11953-9">elsewhere</a>.<br />
+2) Fig c: test for enrichment of cell type specific functional
+annotation using <a href="https://github.com/bulik/ldsc">LDSC</a>.</p>
 <p><img src = "images/FactorGO_Diagram.png" style = "width:70%" align = "middle"></p>
 </div>
 <div id="result" class="section level2">
 <h2>Result</h2>
 <div id="runtime-comparison" class="section level3">
 <h3>Runtime comparison</h3>
-<p>FactorGO under a transformation method substantially improves
-convergence rate, which make its run time on 2-cores GPU comparable to
-tSVD:</p>
+<p>FactorGO implemented using Just-In-Time (<a
+href="https://jax.readthedocs.io/en/latest/jax-101/02-jitting.html">JIT</a>)
+compilation via JAX package in python under a parameter expansion method
+substantially improves convergence rate, which make its run time on
+2-cores GPU comparable to tSVD:</p>
 <p><img src = "images/runtime.png" width="50%" height="50%" align = "middle"></p>
 </div>
 <div id="top-two-factors" class="section level3">
 <h3>Top two factors</h3>
+<p>To look at the pleiotropic factors, we start with top 2 factors that
+explains most variance in the data. The first factor characterize shared
+co-morbidity between <a
+href="https://www.cdc.gov/mmwr/volumes/70/wr/mm7010e4.htm">Covid-19 and
+body weight</a>, basal metabolic rate that is relevant with BMI. The
+second factor characterize overall human growth such as height, artery
+measure, and body fat volume.</p>
+<p><img src = "images/FactorGO_Top2_Z1_Z2.png" width="50%" height="50%" align = "middle"></p>
+<p>*highlighted points are flanked by 2 times posterior variance</p>
 </div>
 <div id="case-study-1-human-height" class="section level3">
 <h3>Case study 1: Human height</h3>
+<p>For standing height, the most relevant pleiotropic factor is factor
+2. In this factor, the leading traits are body measures such as standing
+height, sitting height, followed by fat-free mass measurements. These
+reflect the growth hormones play roles in both height growth and
+metabolic pathways. Moreover, this factor is enriched with genes
+differentially expressed in reproductive organs like Uterus and Cervix
+and muscular skeletal tissues like cartilage and chondrocytes , which is
+consistent with previous findings (<a
+href="https://www.nature.com/articles/ng.3097">Wood et al. 2014</a>, <a
+href="https://www.nature.com/articles/s41588-018-0081-4">Finucane et
+al. 2018</a>).</p>
+<p><img src = "images/FactorGO_height_ldsc_F2_SEG.png" width="80%" height="80%" align = "middle"></p>
 </div>
-<div id="case-study-2-rheumatoid-arthritis" class="section level3">
-<h3>Case study 2: Rheumatoid arthritis</h3>
+<div id="case-study-2-rheumatoid-arthritis-ra" class="section level3">
+<h3>Case study 2: Rheumatoid arthritis (RA)</h3>
+<p>For RA, we find the most relevant factor captures quite a few trait
+domain including bone related traits like blood calcium level,
+osteoporosis (easiness of bone fracture); a known treatment for RA
+called methotrexate; and moreover, other autoimmune disease like IBD.
+Interestingly, the variants driving this factor is enriched with genes
+that are differentially expressed in periodontal condition and digestive
+system, which also reflect existing clinical evidence (<a
+href="https://pubmed.ncbi.nlm.nih.gov/27974664/">Konig et
+al. 2016</a>).</p>
+<p><img src = "images/FactorGO_RA_ldsc_F86_SEG.png" width="80%" height="80%" align = "middle"></p>
 </div>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<ul>
+<li>FactorGO identifies pleiotropic factors while appropriately
+accounting for uncertainty in effect sizes under probabilistic
+model.<br />
+</li>
+<li>We applied FactorGO on 2,438 traits and 205 functional annotations
+to characterize pleiotropic factors.<br />
+</li>
+<li>FactorGO validated:<br />
+</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>shared co-morbidity between Covid-19 and BMI.<br />
+</li>
+<li>shared hormonal effect in height and body fat measures.<br />
+</li>
+<li>shared inflammatory mechanisms for rheumatoid arthritis.</li>
+</ol>
 </div>
 
 

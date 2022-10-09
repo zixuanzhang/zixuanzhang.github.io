@@ -69,3 +69,11 @@ As a result, we observe greater fraction of true cases and less stringent alpha 
 knitr::include_graphics(c("images/power1.png","images/power2.png"))
 ``` 
 
+## Conclusion
+
+Our RaDtest using gene-specific weight under sigmoid weight:  
+
+*  control Type I error correctly under varying alpha threshold  
+*  more powerful as gene length increases or effect size increases.
+
+

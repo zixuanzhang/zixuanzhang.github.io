@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 * Sudden cardiac arrest (SCA) is the leading cause of natural death in the United States. SCA most often results from aberrant heart rhythms, known as arrhythmias, which can be triggered by the presence of myocardial ischemia.  
 * Ischemic regions have been shown to give to rise to reflected waves, i.e., a wave propagation in one direction induces another wave to travel in retrograde direction.  
 * Reflected waves have been linked to the onset of life threatening cardiac arrest.  
-* Here we constructed an idealized model of heart tissue with an ischemic region and examine how stochastic ion channel dynamics can affect the propensity of reflected waves.
+* Here we constructed an idealized model of heart tissue with an ischemic region ("Gap" model) and examine how stochastic ion channel dynamics can affect the propensity of reflected waves.
 
 ## Single cardiac cell model
 
@@ -25,7 +25,7 @@ $$
 \end{align}
 $$
 
-The following is an illustrative picture for this model:
+The following is an illustrative picture modeling ion channel dynamics:
 
 <p align="center">
 <img src = "images/gap_illustrate.png" width="50%" align = "middle">
@@ -80,3 +80,12 @@ Stochastic property will manifest itself when the number of ion channels is rela
 <p align="center">
 <img src = "images/Gap_stochastic_result.png" width="70%" hight="70%" align = "middle">
 </p>
+
+## Conclusion
+
+This "Gap" model for cardiac ischemic region shows:  
+
+* The finely tuned gap length of ischemic region between 1.5 and 1.7 could by itself give rise to reflected waves.  
+* Turning on the stochastic property of ion channels can also increase the frequency of more reflected waves occurring as the number of channels per cell decreases even for L=1.5 and L=1.7.  
+* The presence of reflected waves could potentially lead to any type of cardiac arrhythmias because it disrupts the electrical coordination of cardiac tissue in the real heart. 
+
