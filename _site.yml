@@ -12,6 +12,8 @@ navbar:
       href: RaDtest.html
     - text: "Gap model"
       href: Gap_model.html
+    - text: "DataScience project"
+      href: https://shanj21.com/P8105_final_website.io/
 
   right:
     - text: "About"
