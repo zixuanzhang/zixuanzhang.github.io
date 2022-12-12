@@ -5,6 +5,10 @@ date: '2022-09-19'
 output: html_document
 ---
 
+## FactorGO Shiny
+
+check out result for your trait of interest: https://eleanorzhang1996.shinyapps.io/FactorGO_shiny/
+
 ## Background 
 
 * Biobank genome-wide association studies ([GWAS](https://pubmed.ncbi.nlm.nih.gov/28686856/)) identified thousands of genetic variants associated with human phenotypic traits.  
