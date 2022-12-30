@@ -16,7 +16,7 @@ I graduated with a BS degree in Genetic & Genomics from [University of Californi
 
 ### About this website
 
-On this website, you will find my [CV](resume_zzx.pdf) and some projects I have done and working on. This website serves as a platform of sharing my research and learning experience with the public fellows. You are welcome to check on my social media webpages or contact me by email!
+On this website, you will find selected projects I have done or working on. You are welcome to check on my social media webpages or contact me by email!
 
 ### Contact
 
@@ -26,4 +26,4 @@ University of Southern California
 
 Email: zzhang39@usc.edu  
 
-<img src = "images/D7K_9718.jpg" width="50%" height="50%" align = "middle">
+<img src = "images/headshot.jpg" width="30%" height="30%" align = "middle">
