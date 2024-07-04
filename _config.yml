@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "headshot.jpg"
   name             : "Zixuan (Eleanor) Zhang"
-  pronouns         : "she/her"  
+  pronouns         : # "she/her"  
   bio              : "PhD candidate in Biostatistics at USC"
   location         : "Los Angeles, CA"
   employer         : "University of Southern California"
@@ -36,7 +36,7 @@ author:
   impactstory      : # URL
   orcid            : "https://orcid.org/0000-0001-7193-8694"
   semantic         : # URL
-  pubmed           : "https://www.researchgate.net/profile/Zixuan_Zhang43"
+  pubmed           : # "https://www.researchgate.net/profile/Zixuan_Zhang43"
   researchgate     : # URL
 
   # Repositories and software development
