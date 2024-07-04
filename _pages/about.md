@@ -11,3 +11,7 @@ My name is Zixuan (Eleanor) Zhang, 5th year PhD candidate in Biostatistics in th
 
 Before PhD, I graduated with a Bachelor degree in Genetic & Genomics from [University of California, Davis](https://www.ucdavis.edu/) in 2018 and received Master degree in Biostatistics from [Columbia Univeristy Mailman School of Public Health](https://www.mailman.columbia.edu/) in 2020. 
 
+
+Contact
+=======
+Email: zzhang39@usc.edu

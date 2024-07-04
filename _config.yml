@@ -25,7 +25,7 @@ author:
   name             : "Zixuan (Eleanor) Zhang"
   pronouns         : # "she/her"  
   bio              : "PhD candidate in Biostatistics at USC"
-  location         : "Los Angeles, CA"
+  location         : # "Los Angeles, CA"
   employer         : "University of Southern California"
   uri              : # URL
   email            : "zzhang39@usc.edu" 
