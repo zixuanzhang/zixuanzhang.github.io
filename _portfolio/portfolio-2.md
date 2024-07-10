@@ -1,6 +1,7 @@
 ---
-title: "Portfolio item number 2"
-excerpt: "Short description of portfolio item number 2 <br/><img src='/images/500x300.png'>"
+title: "Other softwares from Mancuso Lab"
+excerpt: "github link: https://github.com/mancusolab <br/><img 
+src='/images/mancusolab_github.png'>"
 collection: portfolio
 ---
 
