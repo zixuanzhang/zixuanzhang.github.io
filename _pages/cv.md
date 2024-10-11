@@ -66,7 +66,7 @@ Honors
 
 Service and leadership
 ======
-President, 2021-present,
+President, 2021-2024,
 Graduate Society of Biostatistics and Epidemiology (GSBE) at Keck School of Medicine, USC
 * Organized academic and career development events such as book clubs, workshops, and social events.
 * Represented our group to give celebration speech for graduation ceremony and welcoming talk for school orientation.

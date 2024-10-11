@@ -17,3 +17,7 @@ Before PhD, I graduated with a Bachelor degree in Genetic & Genomics from [Unive
 Contact
 =======
 Email: zzhang39@usc.edu
+
+I am looking for postdoc position and will graduate in Spring 2025. Happy to chat with labs!
+
+
