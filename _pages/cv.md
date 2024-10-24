@@ -9,25 +9,19 @@ redirect_from:
 
 {% include base_path %}
 
+You can find my CV [here](http://zixuanzhang.github.io/files/ZixuanZhang_CV.pdf).
+
 Education
 ======
 * Ph.D in Biostatistics, University of Southern California, 2025 (expected)
 * M.S. in Biostatistics, Columbia University, 2020
 * B.S. in Genetics & Genomics, University of California, Davis, 2018
 
-Work experience
-======
-Biostatistics Intern, BeiGene, 06/23
-  * Developed R shiny web to guide triple outcome (Go/No-Go/Consider) decision making in basket trial design for oncology/hemotology phase Ib efficacy expansion studies. 
-  * Evaluated frequentist and Bayesian hierarchical modeling approaches in type I error and power for making the correct decision by simulations in R.
-  * Supervisor: co-mentored by Nicole Li, Zang Miao, Huan Cheng
-
-
 Skills
 ======
 * Programming: R, Python, Linux, high performance computing, Git & Github
+* Courses: Machine learning, Deep learning, Advanced statistical computing, High dimensional data, Generalized linear models, Mixed effects modeling
 * Other skills: scientific writing, presentation, communication, collaboration
-* Courses: Machine learning, Advanced statistical computing, High dimensional data, Data analysis, Clinical trial, Generalized linear models, Mixed effects modeling, Deep learning
 
 
 Publications
@@ -51,6 +45,9 @@ Teaching
   
 Fellowship & Rewards
 ======
+Student Success Scholarship, Department of Population and Public Health Sciences, USC, 10/24
+* 500$
+
 Conference Travel Award, Department of Population and Public Health Sciences, USC, 10/23
 * 500$
 
@@ -77,4 +74,11 @@ Career China Club, Mailman School of Public Health, Columbia University
 * Planned events for student panel talk of internship experience. 
 * Invited speakers from pharmaceutical industries to visit campus and share working experience with students.
 
+
+Work experience
+======
+Biostatistics Intern, BeiGene, 06/23
+  * Developed R shiny web to guide triple outcome (Go/No-Go/Consider) decision making in basket trial design for oncology/hemotology phase Ib efficacy expansion studies. 
+  * Evaluated frequentist and Bayesian hierarchical modeling approaches in type I error and power for making the correct decision by simulations in R.
+  * Supervisor: co-mentored by Nicole Li, Zang Miao, Huan Cheng
 
