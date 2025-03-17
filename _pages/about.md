@@ -18,6 +18,6 @@ Contact
 =======
 Email: zzhang39@usc.edu
 
-I am looking for postdoc position and will graduate in Spring 2025. Happy to chat with labs!
+I will be joining U Penn for my postdoc after obtaining my PhD degree in Summer 2025.
 
 
