@@ -24,7 +24,7 @@ author:
   avatar           : "headshot.jpg"
   name             : "Zixuan (Eleanor) Zhang"
   pronouns         : # "she/her"  
-  bio              : "PhD candidate in Biostatistics at USC"
+  bio              : "PhD in Biostatistics at USC"
   location         : # "Los Angeles, CA"
   employer         : "University of Southern California"
   uri              : # URL
@@ -48,7 +48,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : # "bsky.app" # Replace this with you Bluesky username
+  bluesky          : "elezzx" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username

@@ -1,7 +1,7 @@
 ---
-title: "jaxQTL"
-excerpt: "github link: https://github.com/mancusolab/jaxqtl <br/><img 
-src='/images/jaxqtl_github.png'>"
+title: "Other softwares from Mancuso Lab"
+excerpt: "github link: https://github.com/mancusolab <br/><img 
+src='/images/mancusolab_github.png'>"
 collection: portfolio
 ---
 
