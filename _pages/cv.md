@@ -13,7 +13,7 @@ You can find my CV [here](http://zixuanzhang.github.io/files/ZixuanZhang_CV.pdf)
 
 Education
 ======
-* Ph.D in Biostatistics, University of Southern California, 2025 (expected)
+* Ph.D in Biostatistics, University of Southern California, 2025
 * M.S. in Biostatistics, Columbia University, 2020
 * B.S. in Genetics & Genomics, University of California, Davis, 2018
 
