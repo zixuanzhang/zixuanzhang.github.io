@@ -20,6 +20,6 @@ Before PhD, I graduated with a Bachelor degree in Genetic & Genomics from [Unive
 
 Contact
 =======
-Email: elezzx@upenn.edu
+Email: Zixuan.Zhang@pennmedicine.upenn.edu
 
 
